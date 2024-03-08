@@ -1,0 +1,26 @@
+body {
+    text-align: center; /* Centers all text */
+    font-family: Arial, sans-serif; /* Sets a readable font */
+    background-image: url('flower.jpg'); /* Sets the background image */
+    background-size: 1200px 800px;  /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 150px
+}
+
+h1, p, h2 {
+    margin: 20px 0; /* Adds spacing above and below each element */
+}
+
+@keyframes flashing {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: yellow; }
+    100% { color: purple; }
+}
+
+#welcome {
+    animation: flashing 2s infinite; /* Apply the flashing effect */
+}
